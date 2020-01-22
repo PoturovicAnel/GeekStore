@@ -1,0 +1,5 @@
+id,user_id,name,secret,redirect,personal_access_client,password_client,revoked,created_at,updated_at
+1,,Laravel Personal Access Client,5vkFlTFie2pE1RWzUuprhtRcxNjKtVnY0D0VFBit,http://localhost,1,0,0,2020-01-20 11:06:54,2020-01-20 11:06:54
+2,,Laravel Password Grant Client,Fpoki6Box9dAmh2np8kOs9kV40IJD6RkkE68dQRT,http://localhost,0,1,0,2020-01-20 11:06:54,2020-01-20 11:06:54
+3,,Laravel Personal Access Client,VFMzRiz38oU5TGyOhTpSjS3LMYTECvBImTEyJEbx,http://localhost,1,0,0,2020-01-20 11:07:08,2020-01-20 11:07:08
+4,,Laravel Password Grant Client,Wt6xpdmOZDB1jXjdo0K9Zix9ZyaXdxTLvKExxc8h,http://localhost,0,1,0,2020-01-20 11:07:08,2020-01-20 11:07:08

@@ -1,0 +1,4 @@
+id,name,description,units,price,image,created_at,updated_at,deleted_at
+1,Death Star,One and only deathstar,1,200.0,https://cdn.shopify.com/s/files/1/0030/4227/9494/products/sw-death-star-neon-light-01_800x.progressive.jpg?v=1574306724,2020-01-20 11:07:25,2020-01-20 11:07:25,
+2,Wonder women tofflor,Kän dig varm i dessa tofflor,15,300.0,https://cdn.shopify.com/s/files/1/1375/9903/products/wonder-woman-retro-dc-comics-slippers-white-bg-01_800x.progressive.jpg?v=1577566856,2020-01-20 11:07:25,2020-01-20 11:07:25,
+3,Test,Test product,10,240.0,http://127.0.0.1:8000/images/1579520714_rpg-468920_1920.jpg,2020-01-20 11:45:14,2020-01-20 11:45:14,

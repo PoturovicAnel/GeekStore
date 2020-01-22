@@ -1,0 +1,4 @@
+id,name,email,is_admin,password,remember_token,created_at,updated_at,deleted_at
+1,Admin,admin@devtest.com,1,$2y$10$avNpoqDnBeQ4sbllxbZOWuMQnegmAAiIfmyomx5QoeD/nQRKuV5eS,,2020-01-20 11:07:25,2020-01-20 11:07:25,
+2,Anel Poturovic,poturovic_anel@hotmail.se,0,$2y$10$Y/lR6kYmFVnKyGehmA3mLenxhYWt4qUfMFhNCtyX5BsPX0rdk3Zzm,,2020-01-20 11:08:27,2020-01-20 11:08:27,
+3,Admin test,admin@test.se,1,$2y$10$jBB2j6KSsOgXJ8WM9JEMMu7zEYZyUkMaEmi9Jaj.VFGDwUm4NYwi.,,2020-01-20 11:15:32,2020-01-20 11:15:32,

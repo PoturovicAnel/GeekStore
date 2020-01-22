@@ -1,0 +1,3 @@
+id,product_id,user_id,quantity,address,is_delivered,created_at,updated_at,deleted_at
+1,1,2,1,Snabbvingegatan 29,1,2020-01-20 11:08:51,2020-01-20 11:29:18,
+2,1,3,1,Snabbvingegatan 29,1,2020-01-20 11:29:12,2020-01-20 11:29:27,
