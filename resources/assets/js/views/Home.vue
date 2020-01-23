@@ -42,8 +42,8 @@
 </script>
 <style scoped>
     .image_class{
-        height:300px;
-        width:150px;
+        max-width:100%;
+        max-height:100%;
     }
     .small-text {
         font-size: 14px;

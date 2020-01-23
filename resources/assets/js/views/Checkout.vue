@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <div class="order-box">
-                    <img :src="product.image" :alt="product.name">
+                    <img class="checkout-image" :src="product.image" :alt="product.name">
                     <h2 class="title" v-html="product.name"></h2>
                     <p class="small-text text-muted float-left">$ {{product.price}}</p>
                     <p class="small-text text-muted float-right">Available Units: {{product.units}}</p>
@@ -24,19 +24,6 @@
                             <div class="col-md-9">
                             <input id="address" type="text" class="form-control" v-model="address" required>
                             </div>
-                             <form action="/charge" method="post" id="payment-form">
-                            <div class="form-row">
-                             <label for="card-element">
-                                   Credit or debit card
-                                 </label>
-                            <div id="card-element">
-                            </div>
-                         <div id="card-errors" role="alert"></div>
-                             </div>
-
-                                 <button>Submit Payment</button>
-                                    </form>
-                        </div>
                         <br>
                         <button class="col-md-4 btn btn-sm btn-success float-right" v-if="isLoggedIn" @click="placeOrder">Continue</button>
                     </div>
@@ -113,5 +100,9 @@
     }
     .title {
         font-size: 36px;
+    }
+    .checkout-image{
+        max-height: 100%;
+        max-width: 100%;
     }
 </style>
