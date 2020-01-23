@@ -5,7 +5,7 @@
                 <div class="order-box">
                     <img class="checkout-image" :src="product.image" :alt="product.name">
                     <h2 class="title" v-html="product.name"></h2>
-                    <p class="small-text text-muted float-left">$ {{product.price}}</p>
+                    <p class="small-text text-muted float-left"> {{product.price}} KR </p>
                     <p class="small-text text-muted float-right">Available Units: {{product.units}}</p>
                     <br>
                     <hr>

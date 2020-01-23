@@ -11,7 +11,7 @@
                         <div class="col-md-4 product-box" v-for="(order,index) in orders" @key="index">
                             <img class="user-image" :src="order.product.image" :alt="order.product.name">
                             <h5><span v-html="order.product.name"></span><br>
-                                <span class="small-text text-muted">$ {{order.product.price}}</span>
+                                <span class="small-text text-muted">{{order.product.price}} KR </span>
                             </h5>
                             <hr>
                             <span class="small-text text-muted">Quantity: {{order.quantity}}
