@@ -14,6 +14,7 @@
     </div>
     <script src="https://js.stripe.com/v3/"></script>
     <script src="{{ mix('js/bootstrap.js') }}"></script>
+    <script src="https://unpkg.com/vue-paypal-checkout@2.0.0/dist/vue-paypal-checkout.min.js"></script>
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

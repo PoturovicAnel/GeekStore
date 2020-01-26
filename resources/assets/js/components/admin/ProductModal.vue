@@ -10,9 +10,17 @@
         <div class="modal-body">
           <slot name="body">
             Name: <input type="text" v-model="data.name">
-            Units: <input type="text" v-model="data.units">
-            Price: <input type="text" v-model="data.price">
-            <textarea v-model="data.description" placeholder="description"></textarea>
+            <br>
+            Units:
+            <br>
+            <input type="text" v-model="data.units">
+            <br>
+            Price: 
+            <br>
+            <input type="text" v-model="data.price">
+            <br>
+            Description:
+            <textarea v-model="data.description"></textarea>
             <span >
               <img :src="data.image" v-show="data.image != null">
               <input type="file" id="file" @change="attachFile">

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="container-fluid hero-section d-flex align-content-center justify-content-center flex-wrap ml-auto">
-            <h2 class="title">All your orders</h2>
+            <h2 class="title">Dina beställningar</h2>
         </div>
         <div class="container">
             <div class="row">
@@ -15,7 +15,7 @@
                             </h5>
                             <hr>
                             <span class="small-text text-muted">Quantity: {{order.quantity}}
-                                <span class="float-right">{{order.is_delivered == 1? "shipped!" : "not shipped"}}</span>
+                                <span class="float-right">{{order.is_delivered == 1? "Skickad!" : "Skickas snart"}}</span>
                             </span>
                             <br><br>
                             <p><strong>Delivery address:</strong> <br>{{order.address}}</p>
@@ -57,8 +57,8 @@
         padding: 10px 15px;
     }
     .hero-section {
-        height: 20vh;
-        background: #ababab;
+        height: 40vh;
+        background:black;
         align-items: center;
         margin-bottom: 20px;
         margin-top: -20px;

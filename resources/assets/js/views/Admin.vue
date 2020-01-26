@@ -68,8 +68,8 @@
 </script>
 <style scoped>
     .hero-section {
-        height: 20vh;
-        background: #ababab;
+        height: 40vh;
+        background: black;
         align-items: center;
         margin-bottom: 20px;
         margin-top: -20px;

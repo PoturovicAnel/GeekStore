@@ -24,18 +24,38 @@
                             <div class="col-md-9">
                             <input id="address" type="text" class="form-control" v-model="address" required>
                             </div>
+                         <div ref="card"></div>
+                         <button v-on:click="purchase">Purchase</button>
+                        </div>
                         <br>
                         <button class="col-md-4 btn btn-sm btn-success float-right" v-if="isLoggedIn" @click="placeOrder">Continue</button>
                     </div>
+                    <paypal-checkout
+    amount="10.00"
+    currency="USD"
+    :client="paypal">
+  </paypal-checkout>
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
+
+
+    let stripe = Stripe(`pk_test_Cr3UsNpwjxEyin7aZ8vhxa1h00kwcf2NWg`),
+    elements = stripe.elements(),
+    card = undefined;
+
+
     export default {
+        mounted: function () {
+        card = elements.create('card', style);
+        card.mount(this.$refs.card);
+  },
         props : ['pid'],
         data(){
+            
             return {
                 address : "",
                 quantity : 1,
@@ -66,6 +86,20 @@
             },
             register(){
                 this.$router.push({ name: 'register', params: { nextUrl: this.$route.fullPath }})
+            },
+            purchase(){
+                
+                let self = this;
+
+  stripe.createToken(stripe).then(function(result) {
+    if (result.error) {
+      self.hasCardErrors = true;
+      self.$forceUpdate(); // Forcing the DOM to update so the Stripe Element can update.
+      return;
+    }
+
+    });
+
             },
             placeOrder(e) {
                 e.preventDefault()
@@ -104,5 +138,10 @@
     .checkout-image{
         max-height: 100%;
         max-width: 100%;
+    }
+    .base{
+        border: 1px, solid, #d8d8d8;
+        border-radius: 4px;
+        columns: #000000;
     }
 </style>

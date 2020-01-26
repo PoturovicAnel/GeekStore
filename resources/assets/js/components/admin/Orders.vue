@@ -17,7 +17,7 @@
                     <td>{{index+1}}</td>
                     <td v-html="order.product.name"></td>
                     <td>{{order.quantity}}</td>
-                    <td>{{order.quantity * order.product.price}}</td>
+                    <td>{{order.quantity * order.product.price}} KR</td>
                     <td>{{order.address}}</td>
                     <td>{{order.is_delivered == 1? "Yes" : "No"}}</td>
                     <td v-if="order.is_delivered == 0"><button class="btn btn-success" @click="deliver(index)">Deliver</button></td>

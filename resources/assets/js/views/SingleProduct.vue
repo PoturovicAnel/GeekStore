@@ -7,11 +7,11 @@
                 <p class="text-muted">{{product.description}}</p>
                 <h4>
                     <span class="small-text text-muted float-left">{{product.price}} KR </span>
-                    <span class="small-text float-right">Available Quantity: {{product.units}}</span>
+                    <span class="small-text float-right">Quantity: {{product.units}}</span>
                 </h4>
                 <br>
                 <hr>
-                <router-link :to="{ path: '/checkout?pid='+product.id }" class="col-md-4 btn btn-sm btn-primary float-right">Buy Now</router-link>
+                <router-link :to="{ path: '/checkout?pid='+product.id }" class="col-md-4 btn btn-sm btn-primary float-right">Köp</router-link>
             </div>
         </div>
     </div>
